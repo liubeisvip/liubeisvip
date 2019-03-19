@@ -1,0 +1,407 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>河南隆昇供应链管理有限公司官网</title>
+    <meta name="keywords" content="桂林网络公司,桂林网站建设,桂林网站设计,桂林网站制作,企业网站模板,响应式网站模板">
+    <meta name="description" content="桂林隆昇科技网络模板网站，专注于桂林网络公司,桂林网站建设,桂林网站设计,桂林网站制作,企业网站模板,响应式网站模板业务搭建。">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/myscroll.js"></script>
+    <script type="text/javascript" src="js/ie.js"></script>
+    <script type="text/javascript" src="js/contnew.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#banner1').myscroll({
+                picEl: $('#move'), //图片父级，不传默认为banner内第1个div
+                ctrlEl: $('#ctrl'), //控制条父级，包括小圆点和左右箭头，不传默认为banner内第2个div
+                libs: true, //是否创建底部小圆点，true || false,不传默认true
+                arrows:false, //是否创建左右箭头，true || false,不传默认true
+                autoPlay: true, //是否自动播放，true || false,不传默认true
+                time: 3500, //自动播放间隔时间，true || false,不传默认2000
+                speed: 1000, //图片切换速度，不传默认400
+                effect: 'fade' //轮播的改变方式 top||left||fade，不传默认left
+            });
+            /*新闻资讯滑动速度*/
+            $(".contNew03").Scroll({
+                line: 1,
+                speed: 1000,
+                timer: 4000,
+                up: "but_up",
+                down: "but_down"
+            });
+        });
+
+    </script>
+
+</head>
+<body>
+<header id="top">
+    <div class="top_center">
+        <div class="top_left">
+            欢迎来到隆昇供应链官方网站!        </div>
+        <div class="top_right">
+            <a href="index.html">返回首页</a>
+            <a href="default_1.html">关于我们</a>
+            <a href="default_7.html">联系我们</a>
+        </div>
+    </div>
+</header>
+<!--导航-->
+<nav>
+    <div class="logo">
+        <a href=""><img src="picture/201810261628124036.png" alt="河南隆昇供应链管理有限公司官网" title="河南隆昇供应链管理有限公司官网" /></a>
+    </div>
+    <div class="nav">
+        <div class="intel">
+            <img src="picture/201810261629282227.png" alt="河南隆昇供应链管理有限公司官网" title="河南隆昇供应链管理有限公司官网" />
+            <span>0773-123-4567</span>
+        </div>
+        <ul>
+
+            <li><a href="index.html" class="hover">首页</a></li>
+                        <li><a href="default_1.html" >关于我们</a></li>
+                        <li><a href="default_2.html" >产品展示</a></li>
+                        <li><a href="default_3.html" >运输路线</a></li>
+                        <li><a href="default_4.html" >新闻资讯</a></li>
+                        <li><a href="default_5.html" >成功案例</a></li>
+                        <li><a href="default_6.html" >营销网络</a></li>
+                        <li><a href="default_7.html" >联系我们</a></li>
+                    </ul>
+    </div>
+</nav>
+<!--轮播图-->
+<div class="banner" id="banner1">
+    <div class="move" id="move">
+        <ul>
+                        <li><img src="picture/201810261626013004.jpg" alt="河南隆昇供应链管理有限公司官网" title="河南隆昇供应链管理有限公司官网"></li>
+                        <li><img src="picture/201810261625529800.jpg" alt="河南隆昇供应链管理有限公司官网" title="河南隆昇供应链管理有限公司官网"></li>
+                        <li><img src="picture/201810261625321588.jpg" alt="河南隆昇供应链管理有限公司官网" title="河南隆昇供应链管理有限公司官网"></li>
+                    </ul>
+    </div>
+    <div class="ctrl" id="ctrl"></div>
+</div>
+
+
+<script type="text/javascript">
+    window.onload=function(){
+        var odiv = document.getElementById('product04_1');
+        var oul = odiv.getElementsByTagName('ul')[0];
+        var ali = oul.getElementsByTagName('li');
+        var spa = -2;
+        oul.innerHTML=oul.innerHTML+oul.innerHTML;
+        oul.style.width=ali[0].offsetWidth*ali.length+'px';
+        function move(){
+            if(oul.offsetLeft<-oul.offsetWidth/2){
+                oul.style.left='0';
+            }
+            if(oul.offsetLeft>0){
+                oul.style.left=-oul.offsetWidth/2+'px'
+            }
+            oul.style.left=oul.offsetLeft+spa+'px';
+        }
+        var timer = setInterval(move,50)
+        odiv.onmousemove=function(){clearInterval(timer);}
+        odiv.onmouseout=function(){timer = setInterval(move,30)};
+        document.getElementsByTagName('a')[0].onclick = function(){
+            spa=-2;
+        }
+        document.getElementsByTagName('a')[1].onclick = function(){
+            spa=2;
+        }
+
+    }
+</script>
+    <!--滚动新闻资讯-->
+    <div id="contNew">
+        <div class="contNew01">
+            <strong>新闻资讯:</strong>
+            <div class="contNew02">
+                <div class="contNew03">
+                    <ul>
+                                                <li><a href="index.html">道路运输小知识：货运</a></li>
+                                                <li><a href="index.html">办理国际货运保险策略</a></li>
+                                                <li><a href="index.html">航空快递小常识 跨越速运来教您</a></li>
+                                                <li><a href="index.html">发挥三大优势 助推货运改革</a></li>
+                                                <li><a href="index.html">鲜活货物运输规则</a></li>
+                                                <li><a href="index.html">中华人民共和国铁路法</a></li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <!--产品滚动信息-->
+    <div id="product01">
+        <div class="product02">
+            <div class="product03">
+                <div class="product03_1">
+                    <span class="span1">product</span>
+                    <div class="xian"></div>
+                    <span class="span2">产品展示</span>
+                    <div class="xian"></div>
+                </div>
+                <div class="product03_2">11是一家及汽车销售、分期付款、挂靠管理、运输管理为一体的综合性物流企业</div>
+            </div>
+            <div class="product04">
+                <div class="product04_1" id="product04_1">
+                    <ul class="ul">
+                                                <li>
+                            <a href="index.html">
+                                <img src="picture/201810291117434307.jpg" alt="河南隆昇供应链管理有限公司官网" title="河南隆昇供应链管理有限公司官网"/>
+                                <span>产品名称一</span>
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="index.html">
+                                <img src="picture/201810261702009159.jpg" alt="河南隆昇供应链管理有限公司官网" title="河南隆昇供应链管理有限公司官网"/>
+                                <span>产品名称二</span>
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="index.html">
+                                <img src="picture/201810261702125198.jpg" alt="河南隆昇供应链管理有限公司官网" title="河南隆昇供应链管理有限公司官网"/>
+                                <span>产品名称三</span>
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="index.html">
+                                <img src="picture/201810261702256234.jpg" alt="河南隆昇供应链管理有限公司官网" title="河南隆昇供应链管理有限公司官网"/>
+                                <span>产品名称四</span>
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="index.html">
+                                <img src="picture/201810261702354751.jpg" alt="河南隆昇供应链管理有限公司官网" title="河南隆昇供应链管理有限公司官网"/>
+                                <span>产品名称五</span>
+                            </a>
+                        </li>
+                                                <li>
+                            <a href="index.html">
+                                <img src="picture/201810261702502333.jpg" alt="河南隆昇供应链管理有限公司官网" title="河南隆昇供应链管理有限公司官网"/>
+                                <span>产品名称六</span>
+                            </a>
+                        </li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--运输路线-->
+    <div id="haulway">
+        <div class="hw1">
+            <div class="hw2">
+                <span>TRANSPORT LINE </span>
+                <p>运输路线</p>
+                <div class="hw2_con">
+                    是一家及货物公路运输、配载、信息服务、仓储中转理货为一体的综合性物流企业。全天候服务优势准时、准点、安全、环保、快捷。                </div>
+                <a href="default_3.html">查看更多</a>
+            </div>
+            <div class="hw3">
+                <ul>
+                                        <li>
+                        <a href="index.html">
+                            <i></i>
+                            <div>
+                                <span>运输线路一</span>
+                                <p><p><span style="color: rgb(51, 51, 51); font-family: 微软雅黑; font-size: 14px; background-color: rgb(255, 255, 255);">临沂——赣州——韶关往返</span></p></p>
+                            </div>
+                        </a>
+                    </li>
+                                        <li>
+                        <a href="index.html">
+                            <i></i>
+                            <div>
+                                <span>运输线路二</span>
+                                <p><p><span style="color: rgb(51, 51, 51); font-family: 微软雅黑; font-size: 14px; background-color: rgb(255, 255, 255);">临沂——赣州——韶关往返</span></p></p>
+                            </div>
+                        </a>
+                    </li>
+                                        <li>
+                        <a href="index.html">
+                            <i></i>
+                            <div>
+                                <span>运输线路三</span>
+                                <p><p><span style="color: rgb(51, 51, 51); font-family: 微软雅黑; font-size: 14px; background-color: rgb(255, 255, 255);">临沂——赣州——韶关往返</span></p></p>
+                            </div>
+                        </a>
+                    </li>
+                                        <li>
+                        <a href="index.html">
+                            <i></i>
+                            <div>
+                                <span>运输线路四</span>
+                                <p><p><span style="color: rgb(51, 51, 51); font-family: 微软雅黑; font-size: 14px; background-color: rgb(255, 255, 255);">临沂——赣州——韶关往返</span></p></p>
+                            </div>
+                        </a>
+                    </li>
+                                    </ul>
+            </div>
+        </div>
+    </div>
+    <!--关于我们-->
+    <div id="about1">
+        <div class="width1100">
+            <div class="about1_1">
+                <div class="about1_2">
+                                       <span>about</span>
+                    <span>关于我们</span>
+                </div>
+                <div class="about_content">
+                    广州某某物流有限公司于2008年8月在大连成立,注册资金500万元，是经批准注册成立的国际货运代理企业，有进出口代理报检、报关权及专做贸易窗口代理的国际商贸公司。拥有大连市著名商标“中寰物流”；2015年6月在大连股权交易市场挂牌，代码为200050；2017年3月通过ISO9001:2015质量管理体系认证。经过全体员工多年坚持不懈的努力，现已在海运、空运、公路运输、铁路运输、进出口贸易等方面得以全面开拓发展，具体业务包括国际海运进出口的运输、国内及国际空运的进出口运输、国内及国际的铁路运输、集装箱运输、危险品运输、报检、报关、代办运输保险等货运代理服务；承接环黄、渤海、长江沿线各个支线点的内贸集装箱门到门运输服务；提供进出口相关的付汇、收汇、 退税等外贸窗口代理服务。随着各方面业务的逐渐成熟与完善，中寰物流现已发展成集货运代理、贸易、贸易代理等于...                </div>
+                                <a href="default_1.html">更多+</a>
+            </div>
+        </div>
+    </div>
+    <!--新闻资讯,联系我们-->
+    <div id="newContact">
+        <div class="newContact1">
+           <!-- 新闻资讯-->
+            <div class="new1">
+                <div class="new1_1">
+                    <div class="new1_2">
+                        <span>news</span>
+                        <p>新闻资讯</p>
+                    </div>
+                    <a href="index.html">更多+</a>
+                </div>
+                <ul>
+                                        <li class="lis">
+                        <a href="index.html">
+                            <i>1</i>
+                            <div class="new1_content">
+                                <span>中华人民共和国铁路法</span>
+                                <div class="new1_contents">
+                                    第一条　为了保障铁路运输和铁路建设的顺利进行，适应社会主义现代化建设和人民生活的需要，制定本法。        　第二条　本法所称铁路，包括国家铁路、地方铁路、...                                </div>
+                            </div>
+                        </a>
+                    </li>
+                                        <li class="lis">
+                        <a href="index.html">
+                            <i>2</i>
+                            <div class="new1_content">
+                                <span>鲜活货物运输规则</span>
+                                <div class="new1_contents">
+                                    第１条 凡在铁路运输中需采取特殊措施，以防止腐烂变质或病残死亡的货物，均属鲜活货物。        托运的鲜活货物必须是品质新鲜、无病残，有能保证货物运输安全的...                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    
+                                         <li class="list">
+                         <a href="index.html">
+                             <i></i>
+                             <span>道路运输小知识：货运</span>
+                             <time>2018-10-29</time>
+                         </a>
+                     </li>
+                                         <li class="list">
+                         <a href="index.html">
+                             <i></i>
+                             <span>办理国际货运保险策略</span>
+                             <time>2018-10-26</time>
+                         </a>
+                     </li>
+                                         <li class="list">
+                         <a href="index.html">
+                             <i></i>
+                             <span>航空快递小常识 跨越速运来教您</span>
+                             <time>2018-10-29</time>
+                         </a>
+                     </li>
+                                         <li class="list">
+                         <a href="index.html">
+                             <i></i>
+                             <span>发挥三大优势 助推货运改革</span>
+                             <time>2018-10-26</time>
+                         </a>
+                     </li>
+                                    </ul>
+            </div>
+            <!--联系我们-->
+            <div class="contact1">
+                <div class="contact1_1">
+                    <div class="contact1_2">
+                        <span>contact</span>
+                        <p>联系我们</p>
+                    </div>
+                    <a href="default_7.html">更多+</a>
+                </div>
+                <div class="kefu">
+                    <img src="picture/201810290956456016.jpg" alt="河南隆昇供应链管理有限公司官网" title="河南隆昇供应链管理有限公司官网">
+                </div>
+                <span>桂林隆昇科技网络模板网站，专注于桂林网络公司,桂林网站建设,桂林网站设计,桂林网站制作,企业网站模板,响应式网站模板业务搭建。</span>
+                <ul class="dizhi">
+                    <li>地址:桂林市七星区信息产业园创新大厦B座A401</li>
+                    <li>热线:0773-123-4567</li>
+                    <li>手机:12345678911</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--友情链接-->
+    <div id="link">
+        <div class="link_1">
+            <strong>友情链接</strong>
+            <ul>
+                                                <li>
+                    <a href="http://www.szgreat.cn">
+                        深圳网站建设                    </a>
+                </li>
+                                <li>
+                    <a href="http://www.bareal.net">
+                        合肥网站建设                    </a>
+                </li>
+                                <li>
+                    <a href="www.kyplay.com">
+                        合肥网站建设公司                    </a>
+                </li>
+                                <li>
+                    <a href="http://www.024w.net/">
+                        沈阳网站建设                    </a>
+                </li>
+                                <li>
+                    <a href="http://www.web021.com">
+                        上海网站建设                    </a>
+                </li>
+                                <li>
+                    <a href="http://www.hehuit.com">
+                        湛江网站建设                    </a>
+                </li>
+                                <li>
+                    <a href="http://www.nanningweb.com/">
+                        南宁网站建设                    </a>
+                </li>
+                            </ul>
+        </div>
+    </div>
+<footer>
+    <div class="footer">
+        <div class="footer_left">
+            <ul>
+
+            <li><a href="index.html" class="hover">首页</a></li>
+                        <li><a href="default_1.html" >关于我们</a></li>
+                        <li><a href="default_2.html" >产品展示</a></li>
+                        <li><a href="default_3.html" >运输路线</a></li>
+                        <li><a href="default_4.html" >新闻资讯</a></li>
+                        <li><a href="default_5.html" >成功案例</a></li>
+                        <li><a href="default_6.html" >营销网络</a></li>
+                        <li><a href="default_7.html" >联系我们</a></li>
+                    </ul>
+            <div class="copyright div1">Copyright © 2002-2018 隆昇供应链 版权所有</div>
+            <div class="foot_rexian div1 div2">
+                <span>热线:&nbsp; 0773-123-4567</span>
+                <span>邮箱:&nbsp; 123456@qq.com</span>
+                <span>传真:&nbsp; 12345678</span>
+            </div>
+            <div class="support div1">
+                技术支持: <a href="http://www.dacongjz.com" target="_blank">隆昇供应链</a>
+            </div>
+        </div>
+        <div class="footer_right">
+            <img src="picture/201810290954368266.jpg" alt="河南隆昇供应链管理有限公司官网" title="河南隆昇供应链管理有限公司官网"/>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
